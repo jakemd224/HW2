@@ -1,0 +1,10 @@
+{% block content %}
+
+<form action="http://localhost:5000/album_result" method="POST">
+  {{ form.albumName.label }} {{ form.albumName() }}<br>
+  {{ form.like.label }}<br>
+  {{ form.like() }}<br>
+  {{ form.submit() }}
+</form>
+
+{% endblock %}
